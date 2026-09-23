@@ -697,6 +697,7 @@ a.nav-link-primary:hover {
 }
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
+  background-color: #00ffff;
 }
 
 .nav-branding {
