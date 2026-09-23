@@ -731,7 +731,7 @@ a.nav-link-primary:hover {
   justify-content: center;
   padding: var(--padding-small);
   text-align: center; /* Keeps text centered */
-  background-color: rgb(227, 96, 164);
+  background-color: rgb(131, 24, 79);
 }
 
 .hero-icon {
