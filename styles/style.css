@@ -103,10 +103,10 @@
   --font-family-display: "Jacquarda Bastarda 9";
   --font-family-body: "Lexend Deca", sans-serif;
   --font-family-heading: "Lexend Deca", sans-serif;
-  --font-family-project-title: "Lexend Deca", serif;
+  --font-family-project-title: "Lexend Deca", sans-serif;
   /* Core Colours */
-  --color-text-primary: #222;
-  --color-text-secondary: #333;
+  --color-text-primary: #000000;
+  --color-text-secondary: #000000;
   --color-accent-primary: #000000;
   --color-accent-secondary: #ff057c;
   --color-overlay-primary: rgba(82, 0, 255, 0.5);
@@ -116,7 +116,7 @@
   --color-bg: #fdfdfd;
   --color-bg-about: #f5f5f5;
   --color-bg-footer: #f5f5f5;
-  --color-bg-holding-page: rgba(82, 0, 255, 0.6);
+  --color-bg-holding-page: #f5f5f5;
   /* Headings */
   --h1-color: #000000;
   --h2-color: #000000;
@@ -541,7 +541,7 @@ sup {
 /* Large project title — appears on individual project pages */
 .project-title {
   font-size: 3.625rem;
-  font-family: var(--font-family-project-title);
+  font-family: var(--lexend-deca-project-title);
   color: var(--color-text-project-title);
   margin-bottom: 1rem;
 }
@@ -730,7 +730,7 @@ a.nav-link-primary:hover {
   justify-content: center;
   padding: var(--padding-small);
   text-align: center; /* Keeps text centered */
-  background-color: blue;
+  background-color: rgb(227, 96, 164);
 }
 
 .hero-icon {
@@ -742,6 +742,7 @@ a.nav-link-primary:hover {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  background-color: rgb(96, 227, 168);
 }
 
 .hero-footer-navigation {
@@ -749,6 +750,7 @@ a.nav-link-primary:hover {
   flex-direction: row;
   justify-content: space-between;
   padding: var(--padding-small);
+  background-color: rgb(185, 96, 227);
 }
 
 /*
