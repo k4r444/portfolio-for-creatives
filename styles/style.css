@@ -717,8 +717,27 @@ a.nav-link-primary:hover {
 }
 
 .nav-branding-logo {
-  width: 3rem;
   /* TODO: Adjust the width of the logo on mobile devices here */
+}
+
+.nav-branding-logo-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  border: 1px solid yellow;
+  /* TODO: Adjust the width of the logo on mobile devices here */
+}
+
+.logo {
+  width: 3rem;
+  background: pink;
+}
+h1.wordmark {
+  width: 15rem;
+  font-size: 1.7rem;
+  background: navy;
+  margin-bottom: 0px;
 }
 
 .hero-headline-wrapper {
@@ -1467,9 +1486,10 @@ to keep your styles reusable and consistent.
     flex-direction: row;
   }
 
-  .nav-branding-logo {
-    width: 5rem;
+  .nav-branding-logo-link {
+    width: 30rem;
     /* TODO: Adjust the width of the logo on large devices here. */
+    background: orange;
   }
 
   .hero {
