@@ -22,15 +22,6 @@
 █████   ██    ██ ██ ██  ██    ██    ███████ 
 ██      ██    ██ ██  ██ ██    ██         ██ 
 ██       ██████  ██   ████    ██    ███████ 
-*/
-
-/* ------------------------------- */
-/* 🌐 Google Fonts - Customize Your Site's Typography */
-/* You can add your own fonts here, but be mindful of performance */
-/* ------------------------------- */
-
-/* TODO: Replace these Google Fonts with the ones you want to use on your site. */
-/* Remember, the more fonts you load, the longer it can take for your page to load. */
 
 /* Arimo Font (for headers or body text) */
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
