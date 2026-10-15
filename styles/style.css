@@ -32,8 +32,8 @@
 /* TODO: Replace these Google Fonts with the ones you want to use on your site. */
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
-/* Lexend Deca Font (for headers or body text) */
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+/* Arimo Font (for headers or body text) */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
 
 /* Jacquard Bastarda (for display text) */
 @import url("https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap");
