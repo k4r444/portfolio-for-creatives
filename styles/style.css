@@ -568,7 +568,7 @@ sup {
 
 .highlight-gradient {
   background: var(--color-gradient-hero);
-  -webkit-background-clip: text;
+  -webkit-background-clip-text: text;
   color: transparent;
   font-weight: bold;
 }
@@ -711,7 +711,9 @@ a.nav-link-primary:hover {
 .nav-branding-group {
   display: flex;
   flex-direction: row;
+  background-color: #f5f5f5;
 }
+
 .nav-branding-item {
   padding: var(--padding-tiny);
 }
