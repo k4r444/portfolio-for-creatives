@@ -26,9 +26,6 @@
 /* Arimo Font (for headers or body text) */
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
 
-/* Jacquard Bastarda (for display text) */
-@import url("https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap");
-
 /* 
 ██ ███    ███ ██████   ██████  ██████  ████████      ██████ ███████ ███████ 
 ██ ████  ████ ██   ██ ██    ██ ██   ██    ██        ██      ██      ██      
@@ -91,10 +88,14 @@
 
 :root {
   /* Typography */
-  --font-family-display: "Jacquarda Bastarda 9";
-  --font-family-body: "Lexend Deca", sans-serif;
-  --font-family-heading: "Lexend Deca", sans-serif;
-  --font-family-project-title: "Lexend Deca", sans-serif;
+  --font-family-body: "Arimo", sans-serif;
+  --font-family-heading: "Arimo", sans-serif;
+  --font-family-project-title: "Arimo", sans-serif;
+  /* <font-weight-absolute> numeric values [1,1000] */
+  font-weight: 400; /* regular */
+  font-weight: 500; /* medium */
+  font-weight: 600; /* semi-bold */
+  font-weight: 700; /* bold */
   /* Core Colours */
   --color-text-primary: #000000;
   --color-text-secondary: #000000;
@@ -442,6 +443,7 @@ svg {
 h1 {
   font-size: 2.2rem;
   font-family: var(--font-family-heading);
+  font-weight: bold;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h1-color);
@@ -450,6 +452,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-family: var(--font-family-heading);
+  font-weight: bold;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -458,6 +461,7 @@ h2 {
 h3 {
   font-size: 1.325rem;
   margin-bottom: 1rem;
+  font-weight: regular;
   line-height: 1.2;
   color: var(--h3-color);
 }
@@ -465,6 +469,7 @@ h3 {
 h4 {
   font-size: 1.2rem;
   line-height: 1.2;
+  font-weight: regular;
   margin-bottom: 1rem;
   color: var(--h4-color);
 }
@@ -472,6 +477,7 @@ h4 {
 h5 {
   font-size: 1.1rem;
   line-height: 1.2;
+  font-weight: regular;
   margin-bottom: 1rem;
   color: var(--h5-color);
 }
@@ -479,6 +485,7 @@ h5 {
 h6 {
   font-size: 1rem;
   line-height: 1.2;
+  font-weight: regular;
   margin-bottom: 1rem;
   color: var(--h6-color);
 }
@@ -486,6 +493,7 @@ h6 {
 h7 {
   font-size: 6.5rem;
   font-family: var(--font-family-display);
+  font-weight: regular;
   line-height: 1.6;
   margin-bottom: 1rem;
   color: var(--h1-color);
