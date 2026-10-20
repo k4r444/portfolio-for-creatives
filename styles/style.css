@@ -125,8 +125,8 @@
   --color-text-project-title: #5200ff;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #000000;
-  --color-link-hover: #ffffff;
+  --color-link: #a92ff6;
+  --color-link-hover: #f96481;
   /* Navigation */
   --color-nav-link: #ffffff;
   --color-nav-link-hover: #ffffff;
@@ -605,11 +605,6 @@ a:link {
   text-decoration: none; /* Removes underline */
 }
 
-/* Visited link — after a user clicks and returns */
-a:visited {
-  color: var(--color-link-visited);
-}
-
 /* Hover — when a user hovers their mouse over the link */
 a:hover {
   color: var(--color-link-hover);
@@ -633,7 +628,7 @@ a:active {
 
 a.nav-link-primary {
   color: black;
-  border: 0.13rem solid black;
+  border: 0.12rem solid black;
   background-color: white;
   color: black;
   padding: 0.3rem 1.2rem 0.3rem 1.2rem;
@@ -642,6 +637,7 @@ a.nav-link-primary {
 a.nav-link-primary:hover {
   background-color: #f96481;
   border-color: #f96481;
+  color: white;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -701,7 +697,7 @@ a.nav-link-primary:hover {
 }
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
-  background-color: #00ffff;
+  background-color: #ffffff;
 }
 
 .nav-branding {
@@ -732,7 +728,7 @@ a.nav-link-primary:hover {
   flex-direction: row;
   align-items: center;
   width: 50%;
-  border: 1px solid yellow;
+  border: 1px solid rgb(255, 255, 255);
   /* TODO: Adjust the width of the logo on mobile devices here */
 }
 
@@ -757,7 +753,7 @@ h1.wordmark {
   justify-content: center;
   padding: var(--padding-small);
   text-align: center; /* Keeps text centered */
-  background-color: rgb(131, 24, 79);
+  background-color: rgb(255, 255, 255);
 }
 
 .hero-icon {
@@ -769,7 +765,7 @@ h1.wordmark {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-color: rgb(96, 227, 168);
+  background-color: rgb(255, 255, 255);
 }
 
 .hero-footer-navigation {
@@ -1496,7 +1492,7 @@ to keep your styles reusable and consistent.
   .nav-branding-logo-link {
     width: 30rem;
     /* TODO: Adjust the width of the logo on large devices here. */
-    background: orange;
+    background: rgb(255, 255, 255);
   }
 
   .hero {
