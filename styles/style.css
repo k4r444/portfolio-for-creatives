@@ -769,7 +769,7 @@ h1.wordmark {
 .hero-footer-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: var(--padding-small);
   background-color: rgb(185, 96, 227);
 }
