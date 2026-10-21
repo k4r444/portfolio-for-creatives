@@ -726,15 +726,15 @@ a.nav-link-primary:hover {
 .nav-branding-logo-link {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  width: 50%;
-  border: 1px solid rgb(255, 255, 255);
+  justify-content: space-between;
+  align-items: left;
+  max-width: 63%;
   /* TODO: Adjust the width of the logo on mobile devices here */
 }
 
 .logo {
   width: 3rem;
-  background: pink;
+  background: rgb(255, 255, 255);
 }
 h1.wordmark {
   width: 15rem;
