@@ -765,15 +765,16 @@ h1.wordmark {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(192, 70, 70);
 }
 
 .hero-footer-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
   padding: var(--padding-small);
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(161, 88, 88);
 }
 
 /*
@@ -1022,6 +1023,7 @@ h1.wordmark {
   min-height: auto; /* Allows footer to expand based on content, no fixed height */
   background: var(--color-bg-footer); /* Using CSS variable for theming */
   padding: var(--padding-small); /* Internal spacing */
+  color: #8d0b93;
 
   /* Note: Using 'fr' units ensures proper scaling across devices */
 }
