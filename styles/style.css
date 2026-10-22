@@ -632,7 +632,6 @@ a:active {
 
 a.nav-link-primary {
   color: black;
-  border: 0.12rem solid black;
   background-color: white;
   color: black;
   padding: 0.3rem 1.2rem 0.3rem 1.2rem;
@@ -725,6 +724,7 @@ a.nav-link-primary:hover {
 .nav-branding-item {
   padding: var(--padding-tiny);
   background-color: #ffffff;
+  align-items: right;
 }
 
 .nav-branding-logo {
@@ -1123,6 +1123,7 @@ a.nav-link-primary:hover {
 .footer-fineprint {
   font-size: 0.875rem; /* Slightly smaller for disclaimers or captions */
   color: var(--color-text-secondary); /* Themed color */
+  font-weight: 400;
 }
 
 /* New item badges */
