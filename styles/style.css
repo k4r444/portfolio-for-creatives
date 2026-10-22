@@ -446,7 +446,7 @@ svg {
 h1 {
   font-size: 2.2rem;
   font-family: var(--font-family-heading);
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h1-color);
@@ -455,7 +455,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-family: var(--font-family-heading);
-  font-weight: medium;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -464,7 +464,7 @@ h2 {
 h3 {
   font-size: 1.325rem;
   margin-bottom: 1rem;
-  font-weight: regular;
+  font-weight: 400;
   line-height: 1.2;
   color: var(--h3-color);
 }
@@ -472,7 +472,7 @@ h3 {
 h4 {
   font-size: 1.2rem;
   line-height: 1.2;
-  font-weight: regular;
+  font-weight: 400;
   margin-bottom: 1rem;
   color: var(--h4-color);
 }
@@ -480,7 +480,7 @@ h4 {
 h5 {
   font-size: 1.1rem;
   line-height: 1.2;
-  font-weight: regular;
+  font-weight: 400;
   margin-bottom: 1rem;
   color: var(--h5-color);
 }
@@ -488,7 +488,7 @@ h5 {
 h6 {
   font-size: 1rem;
   line-height: 1.2;
-  font-weight: regular;
+  font-weight: 400;
   margin-bottom: 1rem;
   color: var(--h6-color);
 }
@@ -496,7 +496,7 @@ h6 {
 h7 {
   font-size: 6.5rem;
   font-family: var(--font-family-display);
-  font-weight: regular;
+  font-weight: 400;
   line-height: 1.6;
   margin-bottom: 1rem;
   color: var(--h1-color);
@@ -636,6 +636,7 @@ a.nav-link-primary {
   background-color: white;
   color: black;
   padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  font-weight: 400;
 }
 
 a.nav-link-primary:hover {
