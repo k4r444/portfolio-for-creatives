@@ -718,7 +718,8 @@ a.nav-link-primary:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #b24343;
+  align-items: center;
+  background-color: #ffffff;
 }
 
 .nav-branding-item {
