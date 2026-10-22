@@ -716,9 +716,9 @@ a.nav-link-primary:hover {
 
 .nav-branding-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  align-items: right;
   background-color: #ffffff;
 }
 
