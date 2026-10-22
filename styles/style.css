@@ -23,8 +23,8 @@
 ██      ██    ██ ██  ██ ██    ██         ██ 
 ██       ██████  ██   ████    ██    ███████ 
 
-/* Arimo Font (for headers or body text) */
-@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+/* Inconsolata Font (for headers or body text) */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
 
 /* 
 ██ ███    ███ ██████   ██████  ██████  ████████      ██████ ███████ ███████ 
@@ -88,14 +88,18 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Arimo", sans-serif;
-  --font-family-heading: "Arimo", sans-serif;
-  --font-family-project-title: "Arimo", sans-serif;
+  --font-family-body: "Inconsolata";
+  --font-family-heading: "Inconsolata";
+  --font-family-project-title: "Inconsolata";
   /* <font-weight-absolute> numeric values [1,1000] */
+  font-weight: 200; /* extra-light */
+  font-weight: 300; /* light */
   font-weight: 400; /* regular */
   font-weight: 500; /* medium */
   font-weight: 600; /* semi-bold */
   font-weight: 700; /* bold */
+  font-weight: 800; /* extra-bold */
+  font-weight: 900; /* black */
   /* Core Colours */
   --color-text-primary: #000000;
   --color-text-secondary: #000000;
@@ -451,7 +455,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-family: var(--font-family-heading);
-  font-weight: bold;
+  font-weight: medium;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
