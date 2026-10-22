@@ -718,7 +718,6 @@ a.nav-link-primary:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   background-color: #ffffff;
 }
@@ -745,11 +744,12 @@ a.nav-link-primary:hover {
   width: 3rem;
   background: rgb(255, 255, 255);
 }
-h3.wordmark {
+.wordmark {
   width: 15rem;
   font-size: 1.7rem;
   background: rgb(255, 255, 255);
   margin-bottom: 0px;
+  align-items: center;
 }
 
 .hero-headline-wrapper {
