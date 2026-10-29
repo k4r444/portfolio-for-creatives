@@ -203,7 +203,7 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/temp/up-cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor: url("../assets/temp/cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -382,9 +382,6 @@ svg {
 }
 
 /* Large decorative elements (modals, banners) */
-.rounded-large {
-  border-radius: var(--radius-lg);
-}
 
 /* Perfect circles (avatars, icons) */
 .rounded-full {
@@ -422,7 +419,7 @@ svg {
 
 .responsive-nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   background: lightblue;
   padding: var(--padding-small);
@@ -459,6 +456,8 @@ h2 {
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
+  font-size: 8vw;
+  font-size: 2vw;
 }
 
 h3 {
@@ -730,6 +729,13 @@ a.nav-link-primary:hover {
 .nav-branding-logo {
   /* TODO: Adjust the width of the logo on mobile devices here */
 }
+.hero-description {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--h4-color);
+}
 
 .nav-branding-logo-link {
   display: flex;
@@ -908,8 +914,9 @@ a.nav-link-primary:hover {
 
 /* Project container for background and padding */
 .project-container {
-  background: var(--color-accent-primary); /* Set project background color */
+  border: 2px;
   padding: var(--padding-medium);
+  border-color: #f96481;
 }
 
 /* Overlay (appears on hover) */
@@ -1612,6 +1619,15 @@ to keep your styles reusable and consistent.
 
   .arrow {
     padding-right: 1rem;
+  }
+  /* hero styles*/
+
+  .hero-description {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--h4-color);
   }
 
   /* About Page Grid for Large Devices */
