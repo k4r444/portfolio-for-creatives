@@ -105,6 +105,7 @@
   --color-text-secondary: #000000;
   --color-accent-primary: #000000;
   --color-accent-secondary: #ff057c;
+  --color-accent-tertiary: #d3f950;
   --color-overlay-primary: rgba(82, 0, 255, 0.5);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
@@ -462,7 +463,6 @@ h2 {
 
 h3 {
   font-size: 1.325rem;
-  margin-bottom: 1rem;
   font-weight: 400;
   line-height: 1.2;
   color: var(--h3-color);
@@ -576,14 +576,13 @@ sup {
 
 /* 📂 Project grid title — used in grid view (like a portfolio gallery) */
 .work-grid-project-title {
-  font-size: 2.875rem;
-  color: var(--color-text-work-grid-title);
+  color: var(--color-text-primary);
   text-wrap: balance;
 }
 
 /* 🏷️ Project category label — displays the type or role of the project */
 .work-grid-project-category {
-  color: var(--color-text-project-category);
+  color: var(--color-text-primary);
 }
 
 /*
@@ -716,14 +715,13 @@ a.nav-link-primary:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: right;
   background-color: #cc4e4e;
 }
 
 .nav-branding-item {
   padding: var(--padding-tiny);
   background-color: #ffffff;
-  align-items: right;
+  text-align: right;
 }
 
 .nav-branding-logo {
@@ -914,9 +912,8 @@ a.nav-link-primary:hover {
 
 /* Project container for background and padding */
 .project-container {
-  border: 2px;
+  border: 2px solid var(--color-accent-tertiary);
   padding: var(--padding-medium);
-  border-color: #f96481;
 }
 
 /* Overlay (appears on hover) */
