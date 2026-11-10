@@ -369,7 +369,10 @@ svg {
 }
 
 /* Large decorative elements (modals, banners) */
-
+.rounded-large {
+  border-radius: var(--radius-lg);
+  background: red;
+}
 /* Perfect circles (avatars, icons) */
 .rounded-full {
   border-radius: var(--radius-full);
@@ -408,7 +411,7 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: lightblue;
+
   padding: var(--padding-small);
 }
 
@@ -684,8 +687,10 @@ a.nav-link-primary:hover {
   flex-direction: column;
 }
 .hero-header {
-  min-height: 20vh; /* Space reserved for logo + nav */
-  background: lawngreen;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: var(--padding-small);
 }
 
 .nav-branding {
@@ -694,6 +699,7 @@ a.nav-link-primary:hover {
   justify-content: space-between;
   padding: var(--padding-small);
   align-items: center;
+  min-height: 50vh;
 }
 
 .nav-branding-group {
@@ -704,18 +710,15 @@ a.nav-link-primary:hover {
 }
 
 .nav-branding-item {
-  background-color: #ffffff;
-  text-align: right;
+  display: block;
 }
 
 .nav-branding-logo {
   /* TODO: Adjust the width of the logo on mobile devices here */
-  background: hotpink;
 }
 
 .nav-branding-wordmark {
   /* TODO: Adjust the width of the logo on mobile devices here */
-  background: orangered;
 }
 .hero-description {
   font-size: 0.8rem;
@@ -889,7 +892,9 @@ a.nav-link-primary:hover {
   border: 2px solid var(--color-accent-tertiary);
   padding: var(--padding-medium);
 }
-
+.project-container:hover {
+  background: var(--color-accent-tertiary);
+}
 /* Overlay (appears on hover) */
 .overlay {
   position: absolute;
@@ -1482,7 +1487,10 @@ to keep your styles reusable and consistent.
   }
 
   .nav-branding {
+    min-height: 10vh;
+
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .hero-header {
@@ -1626,6 +1634,14 @@ to keep your styles reusable and consistent.
     padding-bottom: 0;
     padding-left: var(--padding-jumbo);
     grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  }
+
+  .footer-socials-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background: yellowgreen;
   }
 
   /* Column 1: Tagline/Message */
