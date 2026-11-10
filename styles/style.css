@@ -91,24 +91,15 @@
   --font-family-body: "Inconsolata";
   --font-family-heading: "Inconsolata";
   --font-family-project-title: "Inconsolata";
-  /* <font-weight-absolute> numeric values [1,1000] */
-  font-weight: 200; /* extra-light */
-  font-weight: 300; /* light */
-  font-weight: 400; /* regular */
-  font-weight: 500; /* medium */
-  font-weight: 600; /* semi-bold */
-  font-weight: 700; /* bold */
-  font-weight: 800; /* extra-bold */
-  font-weight: 900; /* black */
   /* Core Colours */
   --color-text-primary: #000000;
   --color-text-secondary: #000000;
   --color-accent-primary: #000000;
-  --color-accent-secondary: #ff057c;
+  --color-accent-secondary: #f96481;
   --color-accent-tertiary: #d3f950;
   --color-overlay-primary: rgba(82, 0, 255, 0.5);
   --color-highlight: lemonchiffon;
-  --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
+  --color-fallback: #f96481; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
   --color-bg: #fdfdfd;
   --color-bg-about: #f5f5f5;
@@ -127,7 +118,7 @@
   --color-text-project-category: #ffffff;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
-  --color-text-project-title: #5200ff;
+  --color-text-project-title: #000000;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
   --color-link: #a92ff6;
@@ -149,7 +140,7 @@
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
-  --color-bg-selection: #5200ff;
+  --color-bg-selection: #f96481;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
   --image-noise-texture: url(/assets/temp/noise.svg);
@@ -544,8 +535,9 @@ sup {
 
 /* Project description text — pairs with the project title */
 .project-description {
+  font-weight: 300;
   font-size: 1.225rem;
-  line-height: 1.2;
+  line-height: 1.4;
   color: var(--color-text-project-description);
   margin-bottom: 1rem;
 }
@@ -625,15 +617,14 @@ a:active {
 
 a.nav-link-primary {
   color: black;
+  padding: var(--padding-tiny);
   background-color: white;
-  color: black;
-  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
   font-weight: 400;
+  display: block;
 }
 
 a.nav-link-primary:hover {
   background-color: #f96481;
-  border-color: #f96481;
   color: white;
 }
 
@@ -688,13 +679,13 @@ a.nav-link-primary:hover {
 
 .hero {
   width: 100%;
-  min-height: 80vh; /* Takes up most of the screen height */
+  min-height: 100vh; /* Takes up most of the screen height */
   display: flex;
   flex-direction: column;
 }
 .hero-header {
-  min-height: 6rem; /* Space reserved for logo + nav */
-  background-color: #ffffff;
+  min-height: 20vh; /* Space reserved for logo + nav */
+  background: lawngreen;
 }
 
 .nav-branding {
@@ -703,24 +694,28 @@ a.nav-link-primary:hover {
   justify-content: space-between;
   padding: var(--padding-small);
   align-items: center;
-  background-color: rgb(255, 255, 255);
 }
 
 .nav-branding-group {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #cc4e4e;
+  align-items: center;
 }
 
 .nav-branding-item {
-  padding: var(--padding-tiny);
   background-color: #ffffff;
   text-align: right;
 }
 
 .nav-branding-logo {
   /* TODO: Adjust the width of the logo on mobile devices here */
+  background: hotpink;
+}
+
+.nav-branding-wordmark {
+  /* TODO: Adjust the width of the logo on mobile devices here */
+  background: orangered;
 }
 .hero-description {
   font-size: 0.8rem;
@@ -730,25 +725,9 @@ a.nav-link-primary:hover {
   color: var(--h4-color);
 }
 
-.nav-branding-logo-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: left;
-  max-width: 63%;
-  /* TODO: Adjust the width of the logo on mobile devices here */
-}
-
 .logo {
   width: 3rem;
   background: rgb(255, 255, 255);
-}
-.wordmark {
-  width: 15rem;
-  font-size: 1.7rem;
-  background: rgb(255, 255, 255);
-  margin-bottom: 0px;
-  align-items: center;
 }
 
 .hero-headline-wrapper {
@@ -1497,16 +1476,18 @@ to keep your styles reusable and consistent.
     gap: var(--gap-ultra);
   }
 
+  /* Header Nav Links on the Right on Desktop */
+  .nav-branding-group {
+    align-items: flex-end;
+  }
+
   .nav-branding {
     flex-direction: row;
   }
 
-  .nav-branding-logo-link {
-    width: 30rem;
-    /* TODO: Adjust the width of the logo on large devices here. */
-    background: rgb(255, 255, 255);
+  .hero-header {
+    min-height: 6rem;
   }
-
   .hero {
     min-height: 100vh;
   }
