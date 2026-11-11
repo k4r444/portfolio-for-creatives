@@ -621,9 +621,8 @@ a:active {
 a.nav-link-primary {
   color: black;
   padding: var(--padding-tiny);
-  background-color: white;
   font-weight: 400;
-  display: block;
+  display: inline-block;
 }
 
 a.nav-link-primary:hover {
@@ -1073,8 +1072,6 @@ a.nav-link-primary:hover {
 
 /* Apply this class to ALL list items (awards, works, social, bullets) */
 .footer-item {
-  line-height: 1.2; /* Consistent line height for footer items to improve spacing */
-  margin-bottom: 0.25rem;
 }
 
 /* ------------------------------- */
@@ -1641,7 +1638,6 @@ to keep your styles reusable and consistent.
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    background: yellowgreen;
   }
 
   /* Column 1: Tagline/Message */
