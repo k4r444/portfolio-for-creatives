@@ -1008,7 +1008,6 @@ a.nav-link-primary:hover {
   min-height: auto; /* Allows footer to expand based on content, no fixed height */
   background: var(--color-bg-footer); /* Using CSS variable for theming */
   padding: var(--padding-small); /* Internal spacing */
-  background-color: #ffffff;
 
   /* Note: Using 'fr' units ensures proper scaling across devices */
 }
@@ -1021,7 +1020,6 @@ a.nav-link-primary:hover {
 .footer-tagline {
   grid-column: 1 / 2; /* Full width (single column) */
   grid-row: 1 / 2;
-  background-color: #ffffff;
 }
 
 .footer-highlights {
