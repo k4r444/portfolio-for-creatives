@@ -97,14 +97,14 @@
   --color-accent-primary: #000000;
   --color-accent-secondary: #f96481;
   --color-accent-tertiary: #d3f950;
-  --color-overlay-primary: rgba(82, 0, 255, 0.5);
+  --color-overlay-primary: #79c9bb;
   --color-highlight: lemonchiffon;
   --color-fallback: #f96481; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #fdfdfd;
-  --color-bg-about: #f5f5f5;
-  --color-bg-footer: #f5f5f5;
-  --color-bg-holding-page: #f5f5f5;
+  --color-bg: #fffcfc;
+  --color-bg-about: #fffcfc;
+  --color-bg-footer: #fffcfc;
+  --color-bg-holding-page: #fffcfc;
   /* Headings */
   --h1-color: #000000;
   --h2-color: #000000;
@@ -121,7 +121,7 @@
   --color-text-project-title: #000000;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #a92ff6;
+  --color-link: #79c9bb;
   --color-link-hover: #f96481;
   /* Navigation */
   --color-nav-link: #ffffff;
@@ -138,7 +138,6 @@
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
 
   /* Special Elements */
-  --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
   --color-bg-selection: #f96481;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
@@ -190,7 +189,7 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/temp/cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor: url("../assets/branding-images/cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -752,7 +751,6 @@ a.nav-link-primary:hover {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-color: rgb(255, 255, 255);
 }
 
 .hero-footer-navigation {
@@ -761,7 +759,6 @@ a.nav-link-primary:hover {
   justify-content: space-between;
   width: 100%;
   padding: var(--padding-small);
-  background-color: rgb(255, 255, 255);
 }
 
 /*
