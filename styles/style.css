@@ -269,15 +269,9 @@ svg {
   width: 100%;
 }
 
-/* Adds a dashed border to help you see the box while you're designing */
 .border {
-  border: 1px dashed var(--color-accent-primary); /* This uses your custom accent color */
-  /* TODO: Delete this later – it’s just here to help you see the box while you work */
+  border: 3px solid(--color-accent-tertiary);
 }
-
-/* ---------------------- */
-/* ✍️  Typography Helpers */
-/* ---------------------- */
 
 /* Optimal line length for readability (~60 characters) */
 .max-text-width {
