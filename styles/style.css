@@ -189,7 +189,7 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/branding-images/cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor: url("../assets/branding-images/cursor.svg") 30 30, auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -426,7 +426,7 @@ svg {
 h1 {
   font-size: 2.2rem;
   font-family: var(--font-family-heading);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h1-color);
@@ -435,7 +435,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-family: var(--font-family-heading);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -445,7 +445,7 @@ h2 {
 
 h3 {
   font-size: 1.325rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
   color: var(--h3-color);
 }
@@ -453,7 +453,7 @@ h3 {
 h4 {
   font-size: 1.2rem;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 1rem;
   color: var(--h4-color);
 }
@@ -461,7 +461,7 @@ h4 {
 h5 {
   font-size: 1.1rem;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 1rem;
   color: var(--h5-color);
 }
@@ -469,7 +469,7 @@ h5 {
 h6 {
   font-size: 1rem;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 1rem;
   color: var(--h6-color);
 }
@@ -477,7 +477,7 @@ h6 {
 h7 {
   font-size: 6.5rem;
   font-family: var(--font-family-display);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
   margin-bottom: 1rem;
   color: var(--h1-color);
@@ -593,6 +593,7 @@ a:link {
 /* Hover — when a user hovers their mouse over the link */
 a:hover {
   color: var(--color-link-hover);
+  cursor: url("../assets/branding-images/cursor-inversed.svg") 30 30, auto;
 }
 
 /* Focus — when a link is focused (keyboard navigation) */
@@ -614,7 +615,7 @@ a:active {
 a.nav-link-primary {
   color: black;
   padding: var(--padding-tiny);
-  font-weight: 400;
+  font-weight: 300;
   display: inline-block;
 }
 
@@ -696,17 +697,19 @@ a.nav-link-primary:hover {
 
 .nav-branding-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 .nav-branding-item {
   display: block;
+  padding-left: 1rem;
 }
 
 .nav-branding-logo {
-  /* TODO: Adjust the width of the logo on mobile devices here */
+  width: 50px;
+  height: auto;
 }
 
 .nav-branding-wordmark {
@@ -715,8 +718,9 @@ a.nav-link-primary:hover {
 .hero-description {
   font-size: 0.8rem;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 1rem;
+  justify-content: center;
   color: var(--h4-color);
 }
 
@@ -961,11 +965,12 @@ a.nav-link-primary:hover {
 
 /* Grid container for the About section */
 .about-grid {
-  display: grid; /* Set to grid layout */
+  display: grid;
   grid-template-columns: 1fr; /* Single column layout for mobile and smaller screens */
   grid-gap: 3rem; /* Space between grid items */
   padding: var(--padding-small); /* Padding around the grid */
   flex: 1; /* Flex-grow to take up available space */
+  align-items: Centre;
 }
 
 /* Image section in the About page grid */
@@ -978,6 +983,8 @@ a.nav-link-primary:hover {
 .about-grid-text {
   grid-column: 1 / 2; /* Text spans the first column */
   grid-row: 2 / 3; /* Text spans the second row */
+  font-weight: 300;
+  text-align: center;
 }
 
 /* 
@@ -1586,7 +1593,7 @@ to keep your styles reusable and consistent.
   .hero-description {
     font-size: 1.2rem;
     line-height: 1.2;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 1rem;
     color: var(--h4-color);
   }
@@ -1594,17 +1601,22 @@ to keep your styles reusable and consistent.
   /* About Page Grid for Large Devices */
 
   .about-grid {
-    padding: var(--padding-jumbo);
-    grid-template-columns: 2fr 3fr;
+    display: block;
+    align-items: center;
   }
 
   .about-grid-image {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    max-width: 20%;
+    max-height: auto;
+    margin: auto;
+    padding-bottom: 2.5rem;
   }
   .about-grid-text {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    margin: auto;
+    max-width: 45%;
   }
 
   /* ------------------------------- */
