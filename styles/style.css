@@ -1591,7 +1591,7 @@ to keep your styles reusable and consistent.
   /* hero styles*/
 
   .hero-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.2;
     font-weight: 300;
     margin-bottom: 1rem;
