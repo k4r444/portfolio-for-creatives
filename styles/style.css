@@ -1484,7 +1484,7 @@ to keep your styles reusable and consistent.
   }
 
   .hero-header {
-    min-height: 6rem;
+    min-height: 4rem;
   }
   .hero {
     min-height: 100vh;
@@ -1613,7 +1613,7 @@ to keep your styles reusable and consistent.
   }
 
   .about-image-one {
-       max-width: 15%;
+    max-width: 15%;
     max-height: auto;
     margin: auto;
   }
@@ -1622,7 +1622,7 @@ to keep your styles reusable and consistent.
     max-height: auto;
     margin: auto;
   }
-  }
+
   .about-grid-text {
     font-weight: 300;
     text-align: center;
