@@ -1606,17 +1606,30 @@ to keep your styles reusable and consistent.
   }
 
   .about-grid-image {
-    max-width: 20%;
+    max-width: 100%;
     max-height: auto;
     margin: auto;
     padding-bottom: 2.5rem;
+  }
+
+  .about-image-one {
+       max-width: 15%;
+    max-height: auto;
+    margin: auto;
+  }
+  .about-image-two {
+    max-width: 20%;
+    max-height: auto;
+    margin: auto;
+  }
   }
   .about-grid-text {
     font-weight: 300;
     text-align: center;
     display: block;
     margin: auto;
-    max-width: 45%;
+    max-width: 50%;
+    padding-bottom: 2.5rem;
   }
 
   /* ------------------------------- */
