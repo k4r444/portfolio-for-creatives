@@ -189,7 +189,9 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/branding-images/cursor.svg") 30 30, auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor:
+    url("../assets/branding-images/cursor.svg") 30 30,
+    auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -235,6 +237,23 @@ svg {
   vertical-align: top; /* Removes little gaps under images (from line-height) */
   object-fit: contain; /* Optional: Makes sure the whole image fits inside its box */
   /* Try 'cover' if you want it to fill the space, or remove this line if not needed */
+}
+
+.logo {
+  fill: black;
+}
+
+.rectangle {
+  fill: yellow;
+}
+
+/* Hover anywhere over the SVG */
+svg:hover .logo {
+  fill: white;
+}
+
+svg:hover .rectangle {
+  fill: red;
 }
 
 /* ---------------------------------------- */
@@ -593,7 +612,9 @@ a:link {
 /* Hover — when a user hovers their mouse over the link */
 a:hover {
   color: var(--color-link-hover);
-  cursor: url("../assets/branding-images/cursor-inversed.svg") 30 30, auto;
+  cursor:
+    url("../assets/branding-images/cursor-inversed.svg") 30 30,
+    auto;
 }
 
 /* Focus — when a link is focused (keyboard navigation) */
@@ -708,7 +729,7 @@ a.nav-link-primary:hover {
 }
 
 .nav-branding-logo {
-  width: 50px;
+  width: 4rem;
   height: auto;
 }
 
@@ -906,7 +927,9 @@ a.nav-link-primary:hover {
   background-color: var(
     --color-overlay-primary
   ); /* Background color of the overlay */
-  transition: opacity var(--duration-normal), visibility var(--duration-normal);
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
 }
 
 /* Hover effect on work page grid items */
