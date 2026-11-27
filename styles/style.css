@@ -479,7 +479,7 @@ h5 {
   font-size: 1.1rem;
   line-height: 1.2;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   color: var(--h5-color);
 }
 
@@ -696,6 +696,13 @@ a.nav-link-primary:hover {
   display: flex;
   flex-direction: column;
 }
+
+.archive-hero {
+  width: 100%;
+  min-height: 30vh; /* Takes up most of the screen height */
+  display: flex;
+  flex-direction: column;
+}
 .hero-header {
   display: flex;
   justify-content: space-around;
@@ -755,6 +762,10 @@ a.nav-link-primary:hover {
   justify-content: center;
   padding: var(--padding-small);
   text-align: center; /* Keeps text centered */
+}
+
+.archive-headline {
+  padding-left: var(--padding-small);
 }
 
 .hero-icon {
@@ -880,7 +891,7 @@ a.nav-link-primary:hover {
     auto-fit,
     minmax(300px, 1fr)
   ); /* Creates a responsive grid */
-  grid-gap: 1rem; /* Space between grid items */
+  grid-gap: 0.5rem; /* Space between grid items */
   /* The auto-fit and minmax() function help ensure responsiveness across screen sizes */
 }
 
@@ -899,7 +910,7 @@ a.nav-link-primary:hover {
 /* Project container for background and padding */
 .project-container {
   border: 2px solid var(--color-accent-tertiary);
-  padding: var(--padding-medium);
+  padding: var(--padding-small);
 }
 .project-container:hover {
   background: var(--color-accent-tertiary);
@@ -1507,12 +1518,21 @@ to keep your styles reusable and consistent.
     min-height: 100vh;
   }
 
+  .archive-hero {
+    min-height: 10vh;
+  }
+
   .hero-headline-wrapper {
     padding-top: var(--padding-jumbo);
     padding-bottom: var(--padding-jumbo);
     padding-left: var(--padding-ultra);
     padding-right: var(--padding-ultra);
   }
+
+  .archive-headline {
+    padding-left: var(--padding-small);
+  }
+
   .error-headline-wrapper {
     padding-top: var(--padding-small);
     padding-bottom: var(--padding-small);
